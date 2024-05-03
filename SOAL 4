@@ -1,0 +1,25 @@
+
+alamat_email = [
+    'gopal.ramasammycook@gmail.com',
+    'louis@media.berkeley.edu',
+    'cwen@iupui.edu',
+    'antranig@caret.cam.ac.uk',
+    'rjlowe@iupui.edu',
+    'gsilver@umich.edu',
+    'david.horwitz@uct.ac.za',
+    'wagnermr@iupui.edu',
+    'zqian@umich.edu',
+    'stephen.marquard@uct.ac.za',
+    'ray@media.berkeley.edu'
+]
+
+
+jumlah_pesan_per_domain = {}
+
+for email in alamat_email:
+
+    domain = email.split('@')[1]
+ 
+    jumlah_pesan_per_domain[domain] = jumlah_pesan_per_domain.get(domain, 0) + 1
+
+print(jumlah_pesan_per_domain)
